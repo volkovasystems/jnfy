@@ -1,0 +1,31 @@
+{
+  "name": "jnfy",
+  "version": "0.0.0",
+  "description": "Stringify JSON structure properly.",
+  "main": "jnfy.deploy.js",
+  "support": "jnfy.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "stringify",
+    "json",
+    "structure",
+    "properly",
+    "jnfy"
+  ],
+  "homepage": "https://github.com/volkovasystems/jnfy",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "falzy": "^0.20.0",
+    "circular-json": "^0.3.1",
+    "protype": "^0.22.0"
+  }
+}

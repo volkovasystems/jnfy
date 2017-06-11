@@ -1,0 +1,44 @@
+{
+  "name": "jnfy",
+  "version": "0.0.0",
+  "description": "Stringify JSON structure properly.",
+  "main": "jnfy.js",
+  "support": "jnfy.support.js",
+  "deploy": "jnfy.deploy.js",
+  "browser": "jnfy.deploy.js",
+  "scripts": {
+    "build": "babel jnfy.js --out-file jnfy.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha jnfy-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/jnfy.git"
+  },
+  "keywords": [
+    "stringify",
+    "json",
+    "structure",
+    "properly",
+    "jnfy"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/jnfy/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/jnfy#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "circular-json": "^0.3.1",
+    "falzy": "^0.20.0",
+    "protype": "^0.22.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.6.1"
+  }
+}
