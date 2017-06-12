@@ -1,6 +1,6 @@
 {
   "name": "jnfy",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Stringify JSON structure properly.",
   "main": "jnfy.js",
   "support": "jnfy.support.js",
@@ -22,6 +22,9 @@
     "jnfy"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/jnfy/issues"

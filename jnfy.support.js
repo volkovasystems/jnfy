@@ -35,6 +35,9 @@
               			"module": "jnfy",
               			"author": "Richeve S. Bebedor",
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+              			],
               			"repository": "https://github.com/volkovasystems/jnfy.git",
               			"test": "jnfy-test.js",
               			"global": true

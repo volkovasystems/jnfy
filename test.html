@@ -1,8 +1,27 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<script
-			type="application/javascript"
-			src="./jnfy.deploy.js">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Jnfy QUnit test</title>
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+	<script type="application/javascript" src="./jnfy.deploy.js"></script>
+</head>
+
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+	<script>
+		QUnit.test( "equal test", function( assert ) {
+
+			assert.equal( jnfy( { "name": "simple" } ), '{"name":"simple"}', "should be deeply equal" );
+
+			assert.ok( jnfy( window ) );
+			
+		} );
 		</script>
-	</head>
+</body>
+
 </html>
