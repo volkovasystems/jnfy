@@ -1,12 +1,13 @@
 {
   "name": "jnfy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Stringify JSON structure properly.",
   "main": "jnfy.deploy.js",
   "support": "jnfy.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -26,7 +27,6 @@
   ],
   "dependencies": {
     "falzy": "^0.20.0",
-    "circular-json": "^0.3.1",
-    "protype": "^0.22.0"
+    "circular-json": "^0.3.1"
   }
 }

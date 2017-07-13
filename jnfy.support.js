@@ -36,7 +36,8 @@
               			"author": "Richeve S. Bebedor",
               			"eMail": "richeve.bebedor@gmail.com",
               			"contributors": [
-              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
               			],
               			"repository": "https://github.com/volkovasystems/jnfy.git",
               			"test": "jnfy-test.js",
@@ -51,19 +52,17 @@
               	@include:
               		{
               			"falzy": "falzy",
-              			"json": "circular-json",
-              			"protype": "protype"
+              			"json": "circular-json"
               		}
               	@end-include
               
               	@todo:
               		This will be the future circular json module of the vs architecture.
               	@end-todo
-              */
+              */var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var falzy = require("falzy");
 var json = require("circular-json");
-var protype = require("protype");
 
 var jnfy = function jnfy(entity, replacer, space) {
 	/*;
@@ -74,7 +73,7 @@ var jnfy = function jnfy(entity, replacer, space) {
                                                    	@end-meta-configuration
                                                    */
 
-	if (falzy(entity) || !protype(entity, OBJECT)) {
+	if (falzy(entity) || (typeof entity === "undefined" ? "undefined" : (0, _typeof3.default)(entity)) != "object") {
 		throw new Error("invalid entity");
 	}
 

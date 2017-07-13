@@ -36,7 +36,8 @@
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"repository": "https://github.com/volkovasystems/jnfy.git",
 			"test": "jnfy-test.js",
@@ -51,8 +52,7 @@
 	@include:
 		{
 			"falzy": "falzy",
-			"json": "circular-json",
-			"protype": "protype"
+			"json": "circular-json"
 		}
 	@end-include
 
@@ -63,7 +63,6 @@
 
 const falzy = require( "falzy" );
 const json = require( "circular-json" );
-const protype = require( "protype" );
 
 const jnfy = function jnfy( entity, replacer, space ){
 	/*;
@@ -74,7 +73,7 @@ const jnfy = function jnfy( entity, replacer, space ){
 		@end-meta-configuration
 	*/
 
-	if( falzy( entity ) || !protype( entity, OBJECT ) ){
+	if( falzy( entity ) || typeof entity != "object" ){
 		throw new Error( "invalid entity" );
 	}
 
