@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>jnfy unit test</title>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Jnfy QUnit test</title>
-	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
-	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-	<script type="application/javascript" src="./jnfy.deploy.js"></script>
-</head>
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
 
-<body>
-	<div id="qunit"></div>
-	<div id="qunit-fixture"></div>
-	<script>
-		QUnit.test( "equal test", function( assert ) {
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
 
-			assert.equal( jnfy( { "name": "simple" } ), '{"name":"simple"}', "should be deeply equal" );
+		<script type="application/javascript" src="./jnfy.deploy.js"></script>
+	</head>
 
-			assert.ok( jnfy( window ) );
-			
-		} );
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "jnfy unit test", function( assert ) {
+
+				assert.equal( jnfy( { "name": "simple" } ), '{"name":"simple"}', "should be deeply equal" );
+
+				assert.ok( jnfy( window ) );
+
+			} );
 		</script>
-</body>
-
+	</body>
 </html>
