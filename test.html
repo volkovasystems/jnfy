@@ -18,9 +18,9 @@
 		<script type="application/javascript">
 			QUnit.test( "jnfy unit test", function( assert ) {
 
-				assert.equal( jnfy( { "name": "simple" } ), '{"name":"simple"}', "should be deeply equal" );
+				assert.equal( jnfy( { "name": "simple" } ), '{"name":"simple"}', "should be equal to '{'name':'simple'}'" );
 
-				assert.ok( jnfy( window ) );
+				assert.equal( typeof jnfy( window ), "string", "should be equal to 'string'" );
 
 			} );
 		</script>
