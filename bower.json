@@ -24,9 +24,5 @@
 		"bower_components",
 		"test",
 		"tests"
-	],
-	"dependencies": {
-		"falzy": "^0.23.0",
-		"circular-json": "^0.3.3"
-	}
+	]
 }
