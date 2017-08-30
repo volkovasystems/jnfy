@@ -1,16 +1,46 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-29T04:28:41.784Z",
-    "end": "2017-08-29T04:28:41.785Z",
-    "duration": 1
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 2,
+		"passes": 2,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-30T09:13:13.948Z",
+		"end": "2017-08-30T09:13:13.954Z",
+		"duration": 6
+	},
+	"tests": [
+		{
+			"title": "should return string type",
+			"fullTitle": "jnfy `jnfy( { 'name': 'simple' } )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to '{'name':'simple'}'",
+			"fullTitle": "jnfy `jnfy( { 'name': 'simple' } )` should be equal to '{'name':'simple'}'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return string type",
+			"fullTitle": "jnfy `jnfy( { 'name': 'simple' } )` should return string type",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to '{'name':'simple'}'",
+			"fullTitle": "jnfy `jnfy( { 'name': 'simple' } )` should be equal to '{'name':'simple'}'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

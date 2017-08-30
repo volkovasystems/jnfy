@@ -1,0 +1,107 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-30T09:13:15.218Z",
+	"end": "2017-08-30T09:13:56.921Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "jnfy",
+			"duration": 0,
+			"start": "2017-08-30T09:13:56.598Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "jnfy",
+			"duration": 144,
+			"start": "2017-08-30T09:13:56.598Z",
+			"end": "2017-08-30T09:13:56.742Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-30T09:13:56.600Z",
+					"end": "2017-08-30T09:13:56.600Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "jnfy",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-08-30T09:13:56.692Z",
+					"end": "2017-08-30T09:13:56.693Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "jnfy",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-08-30T09:13:56.693Z",
+					"end": "2017-08-30T09:13:56.693Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "jnfy",
+					"associatedTest": "should be equal to '{'name':'simple'}'"
+				},
+				{
+					"start": "2017-08-30T09:13:56.742Z",
+					"end": "2017-08-30T09:13:56.742Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "jnfy",
+					"associatedTest": "should be equal to '{'name':'simple'}'"
+				},
+				{
+					"start": "2017-08-30T09:13:56.742Z",
+					"end": "2017-08-30T09:13:56.743Z",
+					"duration": 1,
+					"title": "\"after all\" hook",
+					"associatedSuite": "jnfy"
+				}
+			]
+		},
+		{
+			"name": "`jnfy( { 'name': 'simple' } )`",
+			"duration": 143,
+			"start": "2017-08-30T09:13:56.599Z",
+			"end": "2017-08-30T09:13:56.742Z",
+			"tests": [
+				{
+					"name": "should return string type",
+					"start": "2017-08-30T09:13:56.599Z",
+					"end": "2017-08-30T09:13:56.692Z",
+					"duration": 93,
+					"state": "pass"
+				},
+				{
+					"name": "should be equal to '{'name':'simple'}'",
+					"start": "2017-08-30T09:13:56.693Z",
+					"end": "2017-08-30T09:13:56.741Z",
+					"duration": 48,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

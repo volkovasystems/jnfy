@@ -66,6 +66,22 @@ const jnfy = require( "./jnfy.js" );
 
 describe( "jnfy", ( ) => {
 
+	describe( "`jnfy( { 'name': 'simple' } )`", ( ) => {
+
+		it( "should return string type", ( ) => {
+
+			assert.equal( typeof jnfy( { "name": "simple" } ) == "string", true );
+
+		} );
+
+		it( "should be equal to '{'name':'simple'}'", ( ) => {
+
+			assert.equal( jnfy( { "name": "simple" } ), '{"name":"simple"}' );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-server

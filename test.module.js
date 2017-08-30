@@ -70,6 +70,22 @@ const path = require( "path" );
 
 describe( "jnfy", ( ) => {
 
+	describe( "`jnfy( { 'name': 'simple' } )`", ( ) => {
+
+		it( "should return string type", ( ) => {
+
+			assert.equal( typeof jnfy( { "name": "simple" } ) == "string", true );
+
+		} );
+
+		it( "should be equal to '{'name':'simple'}'", ( ) => {
+
+			assert.equal( jnfy( { "name": "simple" } ), '{"name":"simple"}' );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +94,23 @@ describe( "jnfy", ( ) => {
 //: @client:
 
 describe( "jnfy", ( ) => {
+
+	describe( "`jnfy( { 'name': 'simple' } )`", ( ) => {
+
+		it( "should return string type", ( ) => {
+
+			assert.equal( typeof jnfy( { "name": "simple" } ) == "string", true );
+
+		} );
+
+		it( "should be equal to '{'name':'simple'}'", ( ) => {
+
+			assert.equal( jnfy( { "name": "simple" } ), '{"name":"simple"}' );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-client
@@ -86,6 +119,41 @@ describe( "jnfy", ( ) => {
 //: @bridge:
 
 describe( "jnfy", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`jnfy( { 'name': 'simple' } )`", ( ) => {
+
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof jnfy( { "name": "simple" } ) == "string";
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+
+		it( "should be equal to '{'name':'simple'}'", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return jnfy( { "name": "simple" } );
+				}
+
+			).value;
+
+			assert.equal( result, '{"name":"simple"}' );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-bridge
